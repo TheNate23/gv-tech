@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <title>GV Tech</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="">
+                <img class="logo2" src="./src/images/1727562776243.png" alt="Logo GV Tech">
+            </a>
+            <h1>GV TECH</h1>
+        </div>
+        <nav>
+            <ul class="navigator">
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#atividades">Atividades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#escalas">Escalas</a></li>
+                <li><a href="#matriculas">Matrículas</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+            </ul>
+        </nav>
+        <button onclick="toggleLogin()">Login</button>
+    </header>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleLogin()">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" placeholder="Usuário" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <section id="galeria">
+            <h2>Galeria de Fotos</h2>
+            <div class="gallery">
+                <img class="image" src="./src/images/IMG-20240928-WA0011.jpg" alt="Evento 1">
+                <img class="image" src="./src/images/IMG-20240928-WA0012.jpg" alt="Evento 2">
+                <img class="image" src="./src/images/IMG-20240928-WA0013.jpg" alt="Evento 3">
+            </div>
+        </section>
+
+        <section id="atividades">
+            <h2>Atividades</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Atividade 1</h3>
+                    <p>Data e Hora: [Data]</p>
+                </div>
+                <div class="card">
+                    <h3>Atividade 2</h3>
+                    <p>Data e Hora: [Data]</p>
+                </div>
+                <div class="card">
+                    <h3>Atividade 3</h3>
+                    <p>Data e Hora: [Data]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Projeto A</h3>
+                    <p>Descrição do projeto A...</p>
+                </div>
+                <div class="card">
+                    <h3>Projeto B</h3>
+                    <p>Descrição do projeto B...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="escalas">
+            <h2>Escalas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Atividade</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>Aula de Matemática</td>
+                        <td>08:00 - 10:00</td>
+                    </tr>
+                    <tr>
+                        <td>Terça</td>
+                        <td>Aula de Português</td>
+                        <td>10:00 - 12:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="matriculas">
+            <h2>Matrículas</h2>
+            <div class="matriculas-container">
+                <p>Para se matricular, siga as instruções abaixo:</p>
+                <ol>
+                    <li>Preencha o formulário online.</li>
+                    <li>Envie os documentos necessários.</li>
+                    <li>Aguarde a confirmação da matrícula.</li>
+                </ol>
+                <button>Inscreva-se Aqui</button>
+            </div>
+        </section>
+
+        <section id="quem-somos">
+            <h2>Quem Somos</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Identidade</h3>
+                    <p>Ministério Infanto-Juvenil das Igrejas de Nova Vida no Brasil.</p>
+                </div>
+                <div class="card">
+                    <h3>Valores</h3>
+                    <p>Fé, Excelência, Compromisso, Responsabilidade, Dedicação e Unidade.</p>
+                </div>
+                <div class="card">
+                    <h3>Visão</h3>
+                    <p>Ser reconhecido como um ministério infanto-juvenil excelente por sua paixão por crianças e adolescentes e por sua disposição em disseminar conhecimento e desenvolver pessoas apaixonadas para o crescimento do Reino de Deus.</p>
+                </div>
+                <div class="card">
+                    <h3>Missão</h3>
+                    <p>Abençoar crianças e adolescentes com a Palavra de Deus, mostrando-lhes o único caminho para uma vida plena. Jesus</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contato: contato@instituicao.com</p>
+        <p>&copy; 2024 [Nome da Instituição]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
